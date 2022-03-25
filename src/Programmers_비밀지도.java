@@ -1,4 +1,4 @@
-package Kakao;
+
 
 public class Programmers_비밀지도 {
 	static class SecretMap {

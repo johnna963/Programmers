@@ -1,4 +1,4 @@
-package Kakao;
+
 
 public class RecommendNewID {	
 	static class recommendnewid {

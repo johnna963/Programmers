@@ -1,4 +1,4 @@
-package Kakao;
+
 
 public class Programmers_프렌즈4블록 {
 	static int[] dx = {-1,0,1,0};

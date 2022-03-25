@@ -1,4 +1,4 @@
-package Kakao;
+
 
 public class Programmers_카펫 {
 	static class Carpet  {

@@ -1,4 +1,4 @@
-package Kakao;
+
 import java.util.*;
 public class Programmers_수식최대화 {
 	static class MaximizetheFormula {

@@ -1,4 +1,4 @@
-package Kakao;
+
 import java.util.*;
 public class Programmers_단체사진찍기 {
 	static class TakingGrouPhoto {

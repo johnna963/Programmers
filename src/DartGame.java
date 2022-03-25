@@ -1,4 +1,4 @@
-package Kakao;
+
 
 public class DartGame {
 	static class dartgame {
