@@ -1,4 +1,4 @@
-package GraphSearch;
+
 
 public class Programmers_등굣길 {
 	static class WayToSchool {

@@ -1,4 +1,3 @@
-package GraphSearch;
 
 public class TargetNumber {
 	static class targetnumber {

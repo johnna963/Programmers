@@ -3,9 +3,7 @@ public class Programmers_N으로표현 {
 	static class ExpressedAsN {
 		static int min = Integer.MAX_VALUE;
 	    public int solution(int N, int number) {
-	        int answer = 0;
 	        DFS(0, N, number, 0);
-	        
 	        if(min==Integer.MAX_VALUE) {
 	        	return -1;
 	        }
