@@ -9,6 +9,8 @@ public class Programmers_합승택시요금 {
 	    	for (int i = 0; i < n; i++) {
 				for (int j = 0; j < n; j++) {
 					map[i][j] = 20000000;
+					
+					
 				}
 				map[i][i] = 0;
 			}
