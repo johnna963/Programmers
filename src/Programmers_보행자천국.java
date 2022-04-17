@@ -2,6 +2,7 @@
 public class Programmers_보행자천국 {
 	static class PedestrianParadise {
 	    int MOD = 20170805;
+	    
 	    public int solution(int m, int n, int[][] cityMap) {
 	        int answer = 0;
 	        int[][][] dp = new int[m+1][n+1][2];
