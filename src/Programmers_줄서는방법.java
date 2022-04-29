@@ -1,46 +1,28 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-
+import java.util.*;
 public class Programmers_줄서는방법 {
 	static class HowToLineup {
-		static int[] person;
-		static int[] answer;
-		static boolean[] visited;
-		static int[] out;
-		static ArrayList<int[]> list = new ArrayList<>();
+		
 	    public int[] solution(int n, long k) {
-	    	answer = new int[n];
-	        
-	        person = new int[n];
-	        for (int i = 0; i < n; i++) {
-				person[i] = i+1;
+	    	int[] ret = new int[n];
+			List<Integer> list = new ArrayList<>();
+	        long num=1;
+	        int idx=0;
+			for(int x=1 ; x<=n ; x++) {
+				list.add(x);
+				num *= x;
 			}
-	        out = new int[n];
-	        visited = new boolean[n];
-	        perm(n, 0);
-	        answer = list.get(Integer.parseInt(String.valueOf(k-1)));
-	        
-	        return answer;
+	        k--;
+	        while(idx<ret.length) {
+	        	num /= (n--);
+	        	int i = (int)(k/num);
+	        	ret[idx++] = list.get(i);
+	        	list.remove(i);
+	        	k %= num;
+	        }
+	        return ret;
 	    }
 
-		void perm(int n, int depth) {
-			if(depth == n) {
-				int[] arr = new int[n];
-				for (int i = 0; i < answer.length; i++) {
-					arr[i] = out[i];
-				}
-				list.add(arr);
-				return;
-			}
-			for (int i = 0; i <n ; i++) {
-				if(!visited[i]) {
-					visited[i] = true;
-					out[depth] = person[i];
-					perm(n, depth+1);
-					visited[i]=false;
-				}
-			}
-		}
+		
 	}
 	public static void main(String[] args) {
 		HowToLineup sol = new  HowToLineup();
