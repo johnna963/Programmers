@@ -22,6 +22,7 @@ public class Programmers_주식가격 {
 	public static void main(String[] args) {
 		StockPrice sol = new StockPrice();
 		int[] prices= {1,2,3,2,3};
+		
 		System.out.println(sol.solution(prices));
 	}
 
