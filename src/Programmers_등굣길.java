@@ -15,10 +15,13 @@ public class Programmers_등굣길 {
 						map[i][j] = 0;
 						continue;
 					}
+					
 					if(i!=0) {
+						
 						map[i][j] += map[i-1][j] % 1000000007;
 					}
 					if(j!=0) {
+						
 						map[i][j] += map[i][j-1] % 1000000007;
 					}
 				}
