@@ -2,7 +2,8 @@
 public class Programmers_금과은운반하기 {
 	static class CarryingGoldandSilver {
 	    public long solution(int a, int b, int[] g, int[] s, int[] w, int[] t) {
-	        long max = (long)(1e9 * 2 * 1e5* 2);
+	        
+	    	long max = (long)(1e9 * 2 * 1e5* 2);
 	        long l = 0;
 	        long r = max; 
 	        long T;
