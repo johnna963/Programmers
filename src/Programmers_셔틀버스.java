@@ -2,7 +2,8 @@ import java.util.PriorityQueue;
 
 public class Programmers_셔틀버스 {
 	static class ShuttleBus {
-	    static class Time implements Comparable<Time> {
+	    static class Time implements Comparable<Time> { 
+	    	
 	    	int hour;
 	    	int minute;
 	    	
