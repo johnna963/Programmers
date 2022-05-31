@@ -8,6 +8,7 @@ public class Programmers_숫자의표현 {
 	}
 	public static void main(String[] args) {
 		ExpressionNumber sol = new ExpressionNumber();
+		
 		System.out.println("test");
 	}
 }
