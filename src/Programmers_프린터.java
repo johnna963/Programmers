@@ -14,11 +14,11 @@ public class Programmers_프린터 {
 	    public int solution(int[] priorities, int location) {
 	        int answer = 0;
 	        Queue<printlist> queue = new LinkedList<>();
-	        
+
 	        for (int i = 0; i < priorities.length; i++) {
 				queue.add(new printlist(i, priorities[i]));
 			}
-	        
+
 	        while(!queue.isEmpty()) {
 	        	printlist now  = queue.poll();
 	        	boolean check = false;
@@ -46,5 +46,4 @@ public class Programmers_프린터 {
 		int location = 2;
 		System.out.println(sol.solution(priorities, location));
 	}
-
 }
