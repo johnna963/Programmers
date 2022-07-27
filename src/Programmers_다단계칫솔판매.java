@@ -18,6 +18,7 @@ public class Programmers_다단계칫솔판매 {
 	        HashMap<String, Person> people = new HashMap<>();
 	        people.put("-", new Person("-"));
 	        for (int i = 0; i < enroll.length; i++) {
+	        	
 				people.put(enroll[i], new Person(enroll[i]));
 			}
 	        for (int i = 0; i < referral.length; i++) {
